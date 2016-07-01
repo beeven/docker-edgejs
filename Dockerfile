@@ -10,6 +10,6 @@ RUN apt-get update && \
     apt-get install -y build-essential g++ pkg-config libgdiplus libunwind8 libssl-dev make mono-complete gettext libssl-dev libcurl4-openssl-dev zlib1g libicu-dev uuid-dev unzip nodejs nano && \
     npm install -g node-gyp mocha && \
     node-gyp install && \
-    npm install
+    npm install edge
 
 CMD bash
