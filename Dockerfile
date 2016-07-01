@@ -1,4 +1,4 @@
-FROM nodesource/jessie:4.4.4
+FROM nodesource/jessie:4.2.3
 ADD . /myapp
 WORKDIR /myapp
 # RUN sed -i 's/archive.ubuntu/cn.archive.ubuntu/' /etc/apt/sources.list && \
