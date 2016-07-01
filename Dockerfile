@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM nodesource/trusty:4.4.4
 ADD . /myapp
 WORKDIR /myapp
 # RUN sed -i 's/archive.ubuntu/cn.archive.ubuntu/' /etc/apt/sources.list && \
