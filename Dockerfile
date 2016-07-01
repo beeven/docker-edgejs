@@ -6,7 +6,8 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14
     echo "deb http://download.mono-project.com/repo/debian wheezy main" | tee /etc/apt/sources.list.d/mono-xamarin.list && \
     echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list && \
     apt-get update && \
-    apt-get -y install curl g++ pkg-config libgdiplus libunwind8 libssl-dev make mono-complete gettext libssl-dev libcurl4-openssl-dev zlib1g libicu-dev uuid-dev unzip && \
+    apt-get -y install curl g++ pkg-config libgdiplus libunwind8 libssl-dev make gettext libssl-dev libcurl4-openssl-dev zlib1g libicu-dev uuid-dev unzip && \
+    apt-get -y install mono-complete@4.2.1.102-0xamarin1 && \
     npm install -g node-gyp mocha && \
     node-gyp install && \
     npm install edge
