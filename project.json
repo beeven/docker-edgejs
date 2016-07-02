@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "iTextSharp":"5.5.9",
+    "itextsharp.xmlworker":"5.5.9"
+  },
+  "frameworks": {
+    "dnx451":{
+      "frameworkAssemblies": {
+        "System.Web":""
+      }
+    }
+  }
+}
